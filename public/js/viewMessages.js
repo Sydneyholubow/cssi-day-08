@@ -12,7 +12,7 @@ const getMessages = () => {
             if (key === passcode.value) {
                 console.log("match found")
                 const message = document.querySelector("#message")
-                message.innerHTML = data[key]
+                message.innerHTML = data[key].message
             }
         }
     })
