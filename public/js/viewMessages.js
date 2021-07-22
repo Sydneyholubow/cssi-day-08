@@ -5,6 +5,7 @@ const getMessages = () => {
     console.log("button pressed", passcode.value)
 
     const messagesRef = firebase.database().ref();
+    console.log(messagesRef)
     messagesRef.on('value', (snapshot) => {
         const data = snapshot.val()
         console.log(data)
